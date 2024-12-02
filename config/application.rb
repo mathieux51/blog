@@ -1,5 +1,5 @@
 require_relative "boot"
-require "json"
+# require "json"
 
 require "rails/all"
 
@@ -24,8 +24,8 @@ module Blog
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    config.log_formatter = proc do |severity, timestamp, progname, message|
-      { severity: severity, timestamp: timestamp, progname: progname, message: message }.to_json + "\n"
-    end
+    # config.log_formatter = proc do |severity, timestamp, progname, message|
+    #   { severity: severity, timestamp: timestamp, progname: progname, message: message }.to_json + "\n"
+    # end
   end
 end
